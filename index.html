@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pig game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/3934701127.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex justify-center items-center h-screen w-screen"> 
+   <div class="h-[70vh] w-[60vw] flex relative shadow-2xl">
+    <button class="w-[9vw] h-[5vh] bg-red-200 absolute right-[42.3%] top-[4vh] rounded-[70px] text-[4rem] font-bold" id="newgamebtn"><i class="fa-solid fa-repeat text-[5rem]"></i>   New Game</button>
+    <button class="w-[8vw] h-[6vh] bg-red-200 absolute right-[43.3%] top-[45vh] rounded-[70px] text-[4rem] font-bold hidden" id="diceroll"><i class="fa-solid fa-dice text-[5rem]"></i>   Roll Dice</button>
+    <button class="w-[6vw] h-[6vh] bg-red-200 absolute right-[45%] top-[56vh] rounded-[70px] text-[4rem] font-bold hidden" id="holdbtn"><i class="fa-solid fa-download text-[5rem]"></i>   Hold</button>
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicesix" src="dice6.png">
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicefive" src="dice5.png">
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicefour" src="dice4.png">
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicethree" src="dice3.png">
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicetwo" src="dice2.png">
+    <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="diceone" src="dice1.png">
+
+    <div id="box0" class="bg-[#d7a3b0] w-[50%] h-[100%] flex flex-col justify-center items-center rounded-l-[50px]">
+        <h1 class="text-[10rem]">PLAYER 1</h1>
+        <h1 class="text-[18rem] text-red-700" id="mainval0">0</h1>
+        <div class="bg-red-700 w-[27vh] h-[15vh] mt-72 rounded-[50px] flex flex-col justify-center items-center">
+            <p class="text-white text-[4rem]">CURRENT</p>
+            <p class="text-white text-[8rem] mt-4" id="tempvlue0">0</p>
+        </div>
+    </div>
+    <div id="box1" class="bg-[#b26e8c] w-[50%] h-[100%] flex flex-col justify-center items-center rounded-r-[50px]">
+        <h1 class="text-[10rem]">PLAYER 2</h1>
+        <h1 class="text-[18rem] text-red-700" id="mainval1">0</h1>
+        <div class="bg-red-700 w-[27vh] h-[15vh] mt-72 rounded-[50px] flex flex-col justify-center items-center">
+            <p class="text-white text-[4rem]">CURRENT</p>
+            <p class="text-white text-[8rem] mt-4" id="tempvlue1">0</p>
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
