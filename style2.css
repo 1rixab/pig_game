@@ -9,3 +9,59 @@ body{
     background: rgb(180,39,48);
 background: linear-gradient(133deg, rgba(180,39,48,1) 0%, rgba(113,46,113,1) 100%);
 }
+@keyframes myanime {
+    0% {
+        top: 0;
+        font-size: 100%;
+    }
+    50% {
+        top: 6vh;
+        width: 18vw;
+        height: 10vh;
+        right: 35%;
+    }
+    100% {
+        top: 4vh;
+        font-size: 4rem;
+    }
+}
+
+@keyframes colours {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+@keyframes bigsmall{
+    0% {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: orange;
+        right: 0%;
+        font-size: 10rem;
+    }
+    100%{
+        height: 5vh;
+        width: 9vw;
+        top: 4vh;
+        background-color: lightgoldenrodyellow;
+        right: 42.3%;
+        font-size: 4rem;
+    }
+}
+
+#newgamebtn{
+    animation-name: bigsmall;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 01s;
+}
