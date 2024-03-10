@@ -63,5 +63,5 @@ background: linear-gradient(133deg, rgba(180,39,48,1) 0%, rgba(113,46,113,1) 100
     animation-name: bigsmall;
     animation-duration: 0.5s;
     /* animation-iteration-count: infinite; */
-    animation-delay: 01s;
+    /* animation-delay: 01s; */
 }
