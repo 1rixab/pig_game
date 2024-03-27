@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities; 
+
+
+/* npx tailwindcss -i ./pig_game/input.css -o ./pig_game/output.css --watch
+ */

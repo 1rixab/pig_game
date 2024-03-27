@@ -6,13 +6,15 @@
     <title>pig game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/3934701127.js" crossorigin="anonymous"></script>
 </head>
 <body class="flex justify-center items-center h-screen w-screen"> 
-   <div class="h-[70vh] w-[60vw] flex relative shadow-2xl">
-    <button class="w-[9vw] h-[5vh] bg-red-200 absolute right-[42.3%] top-[4vh] rounded-[70px] text-[4rem] font-bold" id="newgamebtn"><i class="fa-solid fa-repeat text-[5rem]"></i>   New Game</button>
-    <button class="w-[8vw] h-[6vh] bg-red-200 absolute right-[43.3%] top-[45vh] rounded-[70px] text-[4rem] font-bold hidden" id="diceroll"><i class="fa-solid fa-dice text-[5rem]"></i>   Roll Dice</button>
-    <button class="w-[6vw] h-[6vh] bg-red-200 absolute right-[45%] top-[56vh] rounded-[70px] text-[4rem] font-bold hidden" id="holdbtn"><i class="fa-solid fa-download text-[5rem]"></i>   Hold</button>
+   <div class="h-[70vh] w-[60vw] flex relative shadow-2xl" id="mainbox">
+    <button class="w-[9vw] h-[5vh] bg-red-200 absolute right-[42.3%] top-[4vh] rounded-[2vw] text-[1vw] font-bold" id="newgamebtn"><i class="fa-solid fa-repeat text-[2.5vh]"></i>   New Game</button>
+    <p class="absolute text-[10rem] left-[43.5%] top-[10vh] text-[white]" id="playerchance"></p>
+    <button class="w-[8vw] h-[6vh] bg-red-200 absolute right-[43.3%] top-[45vh] rounded-[2vh] text-[1vw] font-bold hidden" id="diceroll"><i class="fa-solid fa-dice text-[2.5vh]"></i>   Roll Dice</button>
+    <button class="w-[6vw] h-[6vh] bg-red-200 absolute right-[45%] top-[56vh] rounded-[2vh] text-[1vw] font-bold hidden" id="holdbtn"><i class="fa-solid fa-download text-[2.5vh]"></i>   Hold</button>
     <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicesix" src="dice6.png">
     <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicefive" src="dice5.png">
     <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicefour" src="dice4.png">
@@ -20,20 +22,22 @@
     <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="dicetwo" src="dice2.png">
     <img class="w-[20vh] h-auto absolute top-[15vh] left-[56.5vh] hidden" id="diceone" src="dice1.png">
 
-    <div id="box0" class="bg-[#d7a3b0] w-[50%] h-[100%] flex flex-col justify-center items-center rounded-l-[50px]">
-        <h1 class="text-[10rem]">PLAYER 1</h1>
-        <h1 class="text-[18rem] text-red-700" id="mainval0">0</h1>
-        <div class="bg-red-700 w-[27vh] h-[15vh] mt-72 rounded-[50px] flex flex-col justify-center items-center">
-            <p class="text-white text-[4rem]">CURRENT</p>
-            <p class="text-white text-[8rem] mt-4" id="tempvlue0">0</p>
+    <div id="box0" class="bg-[#d7a3b0] w-[50%] h-[100%] flex flex-col justify-start items-center rounded-l-[2vh]">
+        <div class="w-[27vh] h-[2vh] bg-red-700 mb-[5vh] rounded-b-[1.5vh]" id="pc0"></div>
+        <h1 class="text-[2.5vw]" id="plyr1" >PLAYER 1</h1>
+        <h1 class="text-[4.5vw] text-red-700" id="mainval0">0</h1>
+        <div class="bg-red-700 w-[27vh] h-[15vh] mt-28 rounded-[2vh] flex flex-col justify-center items-center" id="tempbox1">
+            <p class="text-white text-[1vw]" id="cur">CURRENT</p>
+            <p class="text-white text-[2.5vw] mt-2" id="tempvlue0">0</p>
         </div>
     </div>
-    <div id="box1" class="bg-[#b26e8c] w-[50%] h-[100%] flex flex-col justify-center items-center rounded-r-[50px]">
-        <h1 class="text-[10rem]">PLAYER 2</h1>
-        <h1 class="text-[18rem] text-red-700" id="mainval1">0</h1>
-        <div class="bg-red-700 w-[27vh] h-[15vh] mt-72 rounded-[50px] flex flex-col justify-center items-center">
-            <p class="text-white text-[4rem]">CURRENT</p>
-            <p class="text-white text-[8rem] mt-4" id="tempvlue1">0</p>
+    <div id="box1" class="bg-[#b26e8c] w-[50%] h-[100%] flex flex-col justify-center items-center rounded-r-[2vh]">
+        <div class="w-[27vh] h-[2vh] bg-red-700 mb-[5vh] hidden rounded-b-[1.5vh]" id="pc1"></div>
+       <h1 class="text-[2.5vw]" id="plyr2" >PLAYER 2</h1>
+        <h1 class="text-[4.5vw] text-red-700" id="mainval1">0</h1>
+        <div class="bg-red-700 w-[27vh] h-[15vh] mt-28 rounded-[2vh] flex flex-col justify-center items-center" id="tempbox2">
+            <p class="text-white text-[1vw]"id='cur'>CURRENT</p>
+            <p class="text-white text-[2.5vw] mt-2" id="tempvlue1">0</p>
     </div>
    </div>
     <script src="script.js"></script>

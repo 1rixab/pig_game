@@ -2,13 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
 
 
 body{
-    background: rgb(180,39,48);
-background: linear-gradient(133deg, rgba(180,39,48,1) 0%, rgba(113,46,113,1) 100%);
+    /* background: rgb(180,39,48);
+background: linear-gradient(133deg, rgba(180,39,48,1) 0%, rgba(113,46,113,1) 100%); */
+background-image: url('designer11.png');
+background-size:contain;
 }
+
+
 @keyframes myanime {
     0% {
         top: 0;
@@ -64,4 +70,110 @@ background: linear-gradient(133deg, rgba(180,39,48,1) 0%, rgba(113,46,113,1) 100
     animation-duration: 0.5s;
     /* animation-iteration-count: infinite; */
     /* animation-delay: 01s; */
+}
+
+@media (max-width:700px) {
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+    #mainbox{
+        width: 95%;
+        height: 55%;
+        
+    }
+
+    #plyr1{
+        font-size: 6vw;
+        margin-top: 12vw;
+    }
+    #plyr2{
+        font-size: 6vw;
+        margin-top: 12vw;
+    }
+    #mainval0{
+        font-size: 10vw;
+        
+    }
+    #mainval1{
+        font-size: 10vw;
+       
+    }
+    #newgamebtn{
+        top: 1vh;
+        width: 25vw;
+        right: 37%;
+        font-size: 3vw;
+    }
+    .h-auto{
+        left: 20vw;
+
+    }
+    #dicefive{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+
+    }
+    #dicefour{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+    }
+    #dicethree{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+    }
+    #dicetwo{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+    }
+    #diceone{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+    }
+    #dicesix{
+        left: 16.8vh;
+        width: 12vh;
+        top: 13vh;
+    }
+    #diceroll{
+        width: 25vw;
+        font-size: 3vw;
+        right: 37%;
+        top: 56vw;
+    }
+    #holdbtn{
+        width: 24vw;
+        font-size: 3vw;
+        right: 37.5%;
+        top: 72vw;
+    }
+    #tempbox1{
+        width: 40vw;
+        margin-top: 50vw;
+        height: 12vh;
+    }
+    #tempbox2 {
+        width: 40vw;
+        margin-top: 50vw;
+        height: 12vh;
+    }
+    #cur{
+        font-size: 5vw;
+    }
+    /* #tempvlue0{
+       font-size: 8vw;
+       margin-top: 1vw;
+    }
+    #tempvlue1{
+        font-size: 8vw;
+        margin-top: 1vw;
+ } */
 }
